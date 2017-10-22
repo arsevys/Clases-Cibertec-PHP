@@ -1,6 +1,7 @@
 <?php
 
 #Variable Numérica
+$sdasda=56;
 $numero = 5;
 echo "Esto es una variable Número: $numero<br>";
 var_dump($numero);
@@ -18,15 +19,26 @@ echo "Esto es una variable boleana: $boleana<br>";
 var_dump($boleana);
 echo "<br><br>";
 
+
 #Variable Arreglo
 $colores = array("rojo","amarillo");
+
+$a=["rojo","amarillo",56];
+
+
+
 echo "Esto es una variable arreglo: $colores[1]<br>";
 var_dump($colores);
 echo "<br><br>";
 
-#Variable Arreglo con Propiedades
-$verduras = array("verdura1"=>"lechuga", "verdura2"=>"cebolla");
-echo "Esto es una variable arreglo con propiedades: $verduras[verdura1]<br>";
+
+#Variable Arreglo con Propiedades()
+
+$verduras = array("verdura1"=>array(2,5,6), "verdura2"=>"cebolla");
+
+echo $verduras['verdura1'][1] . "<br>";
+
+// echo "Esto es una variable arreglo con propiedades: $verduras[verdura1]<br>";
 var_dump($verduras);
 echo "<br><br>";
 

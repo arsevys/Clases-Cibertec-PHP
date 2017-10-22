@@ -1,0 +1,295 @@
+
+@font-face {
+    font-family: myFont;
+    src: url("../font/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url("../font/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: myFont3;
+    src: url("../font/UPBOLTERS.otf");
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: myFont2;
+}
+
+body {
+	background-color: rgb(30,30,30);
+	background-image: url('../imagenes/img.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-bottom: 50px;
+}
+
+.cubridor {
+	position: fixed;
+	width: 100%;
+	display: none;
+	height: 100%;
+	z-index: -1;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#contenedor {
+	width: 100%;
+	z-index: 2;
+}
+
+
+
+/**********Navegador Escritorio***********/
+.navegador {
+	padding: 2%;
+	width: 100%;
+	background-color: rgba(30,30,30,.8);
+	display: flex;
+	justify-content:space-between;
+}
+
+.navegador .logo h1 {
+	font-size: 1.6em;
+	color: white;
+	font-family: myFont;
+}
+
+.navegador .nav {
+   flex-grow: 1;
+}
+
+.navegador .nav nav {
+	padding: 0.5%;
+}
+
+.navegador .nav nav ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navegador .nav nav ul li {
+	display: inline-block;
+	color: white;
+	margin-left: 3%;
+    font-size: 1.1em;
+}
+
+.navegador .nav nav ul li:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+
+/***********Navegador Responsive**************/
+
+
+.navegador_mini {
+	width: 100%;
+	background: rgba(40,40,40,0.9);
+	min-height: 70px;
+	padding: 2% 4%;
+	align-items: center;
+	justify-content: space-between;
+	display: none;
+}
+
+
+.logo_mini {
+	font-family: myFont;
+	color: white;
+}
+
+.despliege_mini{
+	padding: 3%;
+	z-index: 4;
+}
+
+.hr_1 ,.hr_2,.hr_3{
+   width: 40px;
+   height: 3px;
+   background: white;
+   transition: all ease 0.3s;
+}
+
+.hr_1 {
+	transform: translateY(-180%);
+}
+
+.hr_3 {
+  transform: translateY(180%);
+}
+
+.nav_mini {
+	position: fixed;
+	height: 100%;
+	left: 0;
+	top: 0;
+	min-width: 60%;
+	background: rgba(30,30,30,0.9);
+	z-index: 3;
+	transform: translateX(-100%);
+	transition: all ease .3s;
+	display: none;
+}
+
+.nav_mini nav {
+	margin-top: 80px;
+	width: 100%;
+}
+
+.nav_mini nav ul {
+   width: 100%; 
+   list-style: none;
+}
+
+
+.nav_mini nav ul li{
+   width: 100%; 
+   padding: 6% 10%;
+   color: white;
+   font-size: 1.2em;
+}
+
+.nav_mini nav ul li:hover{
+	color: black;
+	 background: -webkit-linear-gradient(gold,yellow); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(gold,yellow); /* Opera 11.1-12.0 */ 
+    background: -moz-linear-gradient(gold,yellow); /* Firefox 3.6-15 */
+    background: linear-gradient(gold,yellow); /* Standard syntax */
+
+}
+
+.tapa_nav{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	display: none;
+}
+
+
+/**************Formularios******************/
+
+.class_form {
+	width: 100%;
+	transition: rotate(180deg);
+}
+
+.class_form div {
+	margin: auto;
+	margin-top: 5%;
+}
+
+#login {
+   transform: rotate(0deg);
+}
+
+#registrar {
+	transform: translatex(-100%);
+	display: none;
+}
+
+#Info{
+    transform: translatex(-100%);
+    display: none;
+}
+
+.login {
+	width: 500px;
+	padding: 3% 5%;
+	border-radius: 5px;
+	border:solid 2px rgba(20,20,20,0.8);
+}
+
+.login h3{
+   color: white;
+   font-size: 1.5em;
+   text-align: center;
+}
+
+.formulario form label{
+   font-size: 1.2em;
+   color: white;
+}
+
+.formulario form input[type="text"],.formulario form input[type="password"] {
+	width: 100%;
+	padding: 2% 3%;
+	height: 30px;
+	border-radius: 5px;
+	border:none;
+	margin:2% 0%;
+}
+
+.formulario form input[type="button"]{
+   padding: 2% 10%;
+   margin-top: 2%;
+   border:none;
+   border-radius: 5px;
+   color: white;
+   font-weight: bolder;
+   background-color: #2E34D1;
+}
+
+.formulario form input[type="button"]:hover{
+	  cursor: pointer;
+}
+
+.formulario form input[type="button"]:focus{
+	  background-color: #22269B;
+	  outline: none;
+}
+
+.formulario p {
+	color: white;
+}
+
+
+/*****************************************/
+
+
+   
+/****************** Medias ***************/
+
+@media screen and (max-width: 600px) {
+
+
+    .class_form div{
+    	margin-top: 10%;
+        width: 90%;
+        font-size: 10px;
+    }
+
+	.navegador_mini {
+		display: flex;
+	}
+
+	.navegador {
+		display: none;
+	}
+
+	.nav_mini {
+		display: block;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+

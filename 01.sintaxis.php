@@ -1,7 +1,13 @@
 <?php
 
-print "<h1>Mi primer código PHP!</h1>";
+// print "<h1>Mi primer código PHP!</h1>";
+#fsdfazfdafds
 
-echo "<p>Mi segundo código PHP!</p>", "<h3>Mi tercer código PHP!</h3>";
+
+/*
+
+
+*/
+echo "<p style='color:red'>Mi segundo código PHP!</p>", "<h3>Mi tercer código PHP!</h3>";
 
 ?>
