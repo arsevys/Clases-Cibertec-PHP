@@ -1,6 +1,6 @@
 # Clases-Cibertec-PHP
 ```
-Practicando PHP con los alumnos de Cibertec 
+Practicando y enseñando  PHP con los alumnos de Cibertec 
 Aprendiendo nuevas tecnologias :
 -Ajax
 -PHP
